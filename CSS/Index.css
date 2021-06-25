@@ -1,0 +1,467 @@
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  font-size: normal;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+.mainbg_wrapper{
+  height: 80vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../IMAGES/BACKGROUND/mainbg2.jpg);
+  
+  animation-delay: 5s;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-name: background;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+
+.mainbg_overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+@keyframes background{
+    20%{background-image: url(../IMAGES/BACKGROUND/mainbg1.jpg);}
+    40%{background-image: url(../IMAGES/BACKGROUND/mainbg2.jpg);}
+    60%{background-image: url(../IMAGES/BACKGROUND/mainbg3.jpg);}
+    80%{background-image: url(../IMAGES/BACKGROUND/mainbg4.jpg);}
+    100%{background-image: url(../IMAGES/BACKGROUND/mainbg5.jpg);}
+}
+
+
+
+
+
+
+.maintext1{
+  color:yellow;
+  font-size: 2em;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+
+
+.maintext2{
+  color:white;
+  font-size: 2em;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+
+
+.mainbg_text form input[type=text]{
+   width:30vw;
+   height: 10vh;
+   border: none;
+   outline: none;
+   margin-top: 5vh;
+   font-size: 1.2em;
+   padding-left: 2vw;
+   border-radius: 10px;
+}
+
+
+
+.mainbg_text form input[type=submit]{
+   width:9vw;
+   height: 10vh;
+   border: none;
+   outline: none;
+   color: white;
+   margin-top: 5vh;
+   cursor: pointer;
+   font-size: 1.2em;
+   text-align: center;
+   border-radius: 10px;
+   transition: ease-in-out 0.2s;
+   background-color: royalblue;
+}
+
+
+
+
+
+
+.mainbg_text form input[type=submit]:hover{
+    background-color: rgb(7, 62, 117);
+}
+
+
+
+
+
+
+
+
+/* THIS IS SERVICE SECTION. */
+.service_container {
+  height: 120vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+#service_items {
+  text-align: center;
+  flex-basis: 100vw;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.service_item {
+  height: 60vh;
+  width: 20vw;
+  margin: 70px 15px;
+  padding: 40px 35px;
+  border-radius: 5px;
+  line-height: 60px;
+  border: 2px solid #6c757d;
+  transition: all 0.1s ease-in-out;
+}
+
+.service_item img {
+  height: 80px;
+  width: 90px;
+  margin: 0 auto;
+  display: block;
+}
+
+.service_item h1 {
+  color: #6610f2;
+  font-size: 2em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+.service_item p {
+  font-size: 17px;
+  color: rgb(97, 92, 92);
+  text-align: center;
+  line-height: 30px;
+}
+
+
+.service_item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.middle_banner {
+  display: flex;
+  height: 100vh;
+}
+
+
+
+
+/* BANNER ITEM 1 */
+.middle_banner_item1 {
+  height: 100%;
+  width: 50%;
+}
+
+.middle_banner_item1 img {
+  height: 100%;
+  width: 100%;
+}
+
+/* BANNER ITEM 2 */
+.middle_banner_item2 {
+  height: 100%;
+  width: 50%;
+  padding: 20vh 10vw 30vh 10vw;
+  background-color: #000000;
+}
+
+.middle_banner_item2 h2 {
+  color: white;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 35px;
+  text-transform: capitalize;
+}
+
+
+.middle_banner_item2 h1 {
+  color: white;
+  font-size: 2.5em;
+  text-align: justify;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+
+.middle_banner_item2 p {
+  color: silver;
+  text-align: justify;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+
+.middle_banner_item2 a {
+  display: inline-block;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  background-color: #6610f2;
+  transition: all 0.4s ease;
+}
+
+
+.middle_banner_item2 a:hover {
+  color: #6610f2;
+  border: 1px solid #6610f2;
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+/* THIS IS OVERLAY SERVICE SECTION. */
+.wrapper{
+  height: 120vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+}
+
+
+
+
+
+.title{
+  color:black;
+  font-size: 2em;
+  flex-basis: 100vw;
+  text-align: center;
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+.overlay_image{
+  width: 27vw;
+  height: 35vh;
+  margin:3vh 1.5vw;
+  position: relative;
+}
+
+
+
+
+
+
+.overlay_image>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+
+.overlay {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 27vw;
+  height: 35vh;
+  overflow: hidden;
+  position: absolute;
+  transform: scale(0);
+  border-radius: 10px;
+  transition: .3s ease;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.overlay_image:hover .overlay {
+  transform: scale(1);
+}
+
+
+
+
+
+
+.text {
+  top: 50%;
+  left: 50%;
+  color: black;
+  font-size: 2em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.overlay a{
+  color:white;
+  padding:3vh 3vw;
+  margin-top: 18vh;
+  border-radius: 30px;
+  background-color: #6610f2;
+}
+
+
+
+.overlay a:hover{
+  background-color: #3f0699;
+}
+
+
+
+
+
+
+/* THIS IS CONTACT-US. */
+.container {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+label {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 10vh 16vw;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+input[type="text"] {
+  width: 25vw;
+  height: 9vh;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 5vh;
+}
+
+input[type="email"] {
+  width: 50.5vw;
+  height: 9vh;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 5vh;
+}
+
+
+
+textarea {
+  width: 50.5vw;
+  height: 30vh;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  resize: none;
+  font-size: 1em;
+  border-radius: 20px;
+  margin-bottom: 5vh;
+  padding: 20px 0px 0px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"] {
+  width: 50.5vw;
+  height: 12vh;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  border-radius: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #6610f2;
+  transition: all ease 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: #3f0b94;
+}

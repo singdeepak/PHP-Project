@@ -1,0 +1,172 @@
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  font-size: normal;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Section. */
+.header_container {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  position: sticky;
+  top:0px;
+  z-index: 5;
+}
+
+
+
+
+/* logo */
+#first {
+  font-size: 3em;
+  color: #6610f2;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+
+
+
+#second {
+  font-size: 3em;
+  color: yellow;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+
+
+
+#third {
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+
+
+/* navigation */
+.navbar {
+  flex-basis: 70vw;
+}
+
+
+
+.navbar ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
+.navbar a {
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+}
+
+
+
+.navbar a:not(.active) {
+  color: white;
+  font-size: 18px;
+}
+
+
+
+
+.active {
+  color: #6610f2;
+  font-size: 19px;
+}
+
+
+
+
+.navbar a:hover:not(.active) {
+  color: #6610f2;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+.dropdown-content a {
+  color: black!important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #bdb9b9;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* join */
+.join a {
+  color: white;
+  padding: 15px 30px;
+  font-size: 22px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  background-color: #6610f2;
+}
+
+
+
+.join a:hover {
+  color: #6610f2;
+  border: 1px solid #6610f2;
+  background-color: #333;
+}

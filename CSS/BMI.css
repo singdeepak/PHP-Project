@@ -1,0 +1,100 @@
+div,body,ul,li,h1,h2,p{
+    margin:0;
+    padding:0;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  
+  .bmi_wrapper{
+    height: 150vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: chocolate;
+  }
+  
+
+  
+
+  form{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 7vh 7vw;
+    border-radius: 50px;
+  }
+
+
+  form h1{
+    color:white;
+    padding: 10vh 0px;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+
+
+  .result h1{
+    color:dodgerblue;
+  }
+
+
+
+
+  label{
+    color:white;
+    font-size:2em;
+  }
+
+
+  
+  input[type=text]{
+    width:26vw;
+    height: 10vh;
+    border: none;
+    outline: none;
+    margin-bottom: 5vh;
+    font-size: 1.5em;
+    padding:2vw;
+    border-radius: 20px;
+    border:1px solid rgb(110, 106, 106);
+  }
+  
+  
+  
+  
+  input[type=submit]{
+    width:26vw;
+    height: 10vh;
+    color:white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 5vh;
+    font-size: 1.5em;
+    padding-left: 2vw;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: dodgerblue;
+  }
+  
+  
+  
+  
+  
+  input[type=submit]:hover{
+    background-color: rgb(4, 47, 90);
+  }
